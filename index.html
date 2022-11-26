@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<style>
+    /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.multicolortext {
+        background-image: linear-gradient(to left, green, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-decoration: none;
+      }
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 0, 43);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+table, th, td {
+  border:1px solid black;
+  background-color: white;
+}
+</style>
+<title>Liisa jõulusoovid</title>
+</head>
+<body style="background-color:rgb(209, 22, 50);">
+<p style="font-size: 30px; background-color: rgb(5, 157, 5); ">IT tudeng teeb ikka veebilehe oma jõulusoovide tarvis.</p>
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Ava')" id="defaultOpen">Hinnatabel</button>
+    <button class="tablinks" onclick="openCity(event, 'Mängukaardid')">Mängukaardid</button>
+    <button class="tablinks" onclick="openCity(event, 'Tulevikumärkmik')">Kõrvaklapid</button>
+    <button class="tablinks" onclick="openCity(event, 'Telefon')">Nutikell</button>
+    <button class="tablinks" onclick="openCity(event, 'Kaablid')">Kaablid</button>
+    <button class="tablinks" onclick="openCity(event, 'Trumm')">Trumm?</button>
+    <button class="tablinks" onclick="openCity(event, 'Märkmik')">Märkmik</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Ava" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>Hinnatabel</h3>
+    <p>Lühikene kokkuvõte kõikidest asjadest.</p>
+    <table style="width:50%">
+        <tr>
+          <th>Kaardid</th>
+          <th>Kõrvaklapid</th>
+          <th>Nutikell</th>
+          <th>Kaablid</th>
+          <th>Trummipulgad</th>
+          <th>Märkmik</th>
+        </tr>
+        <tr>
+          <td>39.95 soodukaga</td>
+          <td>99.99 soodukaga</td>
+          <td>64.89</td>
+          <td>12.99 ja 39.99</td>
+          <td>179.99 soodukaga</td>
+          <td>32.24 soodukaga</td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>149.99</td>
+          <td>Phototpointis 99.99</td>
+          <td>Võibolla saab kuskilt odavamalt</td>
+          <td>199.99</td>
+          <td>42.99</td>
+        </tr>
+      </table>
+    <br>
+    
+  </div>
+  <div id="Mängukaardid" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>DOCTOR STRANGE (PVC)</h3>
+    <p>Plastikust mängukaardid, ülimalt ägeda väljanägemisega.</p>
+    <br>
+    <p><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/right/1589636303right-arrow-30.gif">
+        <a style="font-size: 30px;" href="https://www.cardmafia.com/products/doctor-strange-playing-cards-pvc" target="_blank"><span class="multicolortext">Kaardid veebipoest</span></a><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/left/135922352left-arrow-16.gif"></p>
+    <br>
+    <img src="https://cdn.shopify.com/s/files/1/0482/4321/2456/products/updateddoctorstrangeback_1080x.jpg?v=1662743430" style="width: 40%; height: 40%">
+  </div>
+  
+  <div id="Tulevikumärkmik" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>MARSHALL MAJOR IV</h3>
+    <p>Juhtmevabad kõrvapealsed klapid.</p>
+    <br>
+    <p><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/right/1589636303right-arrow-30.gif">
+        <a style="font-size: 30px;" href="https://www.euronics.ee/audio/korvaklapid/juhtmevabad-korvaklapid/1005773/marshall-major-iv-must-korvapealsed-juhtmevabad-korvaklapid" target="_blank"><span class="multicolortext">Kõrvaklapid Euronicsis</span></a><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/left/135922352left-arrow-16.gif"></p>
+    <br>
+    <img src="https://www.euronics.ee/UserFiles/Products/Images/302744-456497-medium.png" style="width: 40%; height: 40%">
+    </div>
+  </div>
+  
+  <div id="Telefon" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>NUTIKELL AMAZFIT GTS 2 MINI</h3>
+    <p>Nutikell.</p>
+    <br>
+    <p><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/right/1589636303right-arrow-30.gif">
+        <a style="font-size: 30px;" href="https://www.k-rauta.ee/p/nutikell-amazfit-gts-2-mini-must/fp0r" target="_blank"><span class="multicolortext">Kell K-Rautas</span></a><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/left/135922352left-arrow-16.gif"></p>
+    <br>
+    <img src="https://ksd-images.lt/display/aikido/store/c2ce8de4c08def94542c8aa2afd5e121.jpg?h=742&w=816" style="width: 40%; height: 40%">
+  </div>
+  <div id="Kaablid" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>KAABLID</h3>
+    <p>Erinevat tüüpi kaablid.</p>
+    <br>
+    <p style="text-align: left;"><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/right/1589636303right-arrow-30.gif">
+        <a style="font-size: 30px;" href="https://www.euronics.ee/audio/hifi-komponendid/kaablid-ja-tarvikud/00122326/kaabel-3-5-mm-hama-1-5-m" target="_blank">
+            <span class="multicolortext">Siin AUXi juhe ja</span></a><a style="font-size: 30px;" href="https://www.euronics.ee/it/it-tarvikud/juhtmed-ja-adapterid/st-tcenm/usb-c-to-gigabit-ethernet-adapter-satechi" target="_blank">
+                <span class="multicolortext">siin USB-C to RJ-45</span></a>
+            <img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/left/135922352left-arrow-16.gif"></p>
+    <br>
+    <img src="https://www.euronics.ee/UserFiles/Products/Images/192746-hama-00122326-medium.png" style="width: 40%; height: 40%">
+    <img src="https://www.euronics.ee/UserFiles/Products/Images/207146-satechi-typec-adapter-ethernet-spacegray-1-38a6e5f8-c163-4119-91c8-d45244ba23a4-copy-medium.png" style="width: 40%; height: 40%">
+  </div>
+  <div id="Trumm" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>POCKETDRUM II</h3>
+    <p>Trummipulgad, millega õhus trummi mängida.</p>
+    <br>
+    <p><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/right/1589636303right-arrow-30.gif">
+        <a style="font-size: 30px;" href="https://www.aeroband.net/products/pocketdrum2?variant=42307825926332" target="_blank"><span class="multicolortext">Trummipulgad veebipoes</span></a><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/left/135922352left-arrow-16.gif"></p>
+    <br>
+    <img src="https://cdn.shopify.com/s/files/1/0252/1169/9260/products/50171667294500_.pic.jpg?v=1669258589&width=600" style="width: 40%; height: 40%">
+  </div>
+  <div id="Märkmik" class="tabcontent" style="background-color:rgb(223, 223, 223);">
+    <h3>ROCKETBOOK FUSION</h3>
+    <p>Märkmik, mille lehekülgi saab telefoniga skännida ning tinti lapiga maha hõõruda.</p>
+    <br>
+    <p><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/right/1589636303right-arrow-30.gif">
+        <a style="font-size: 30px;" href="https://myrocketbook.eu/collections/bfcm/products/rocketbook-fusion?variant=38155898093749" target="_blank"><span class="multicolortext">Märkmik veebipoes</span></a><img style="width: 2.5%; height: 2.5%;" src="https://bestanimations.com/media/left/135922352left-arrow-16.gif"></p>
+    <br>
+    <img src="https://cdn.shopify.com/s/files/1/0502/7712/2229/products/rocketbook-fusion-letter-a4-infinity-black-notebook-evrf-l-k-a-28238552924232_2000x.png?v=1648654397" style="width: 40%; height: 40%">
+  </div>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
