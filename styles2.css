@@ -1,0 +1,202 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+    background-image: url('https://images.pexels.com/photos/1303088/pexels-photo-1303088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+}
+
+header {
+  background-color: #e64d4d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #e64d4d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Specific page styles */
+/* Homepage */
+body.index {
+
+}
+
+h1, h2, p {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* About, Wishes, Contact, Special Pages */
+/* Add your specific Christmas-themed styles here */
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #e64d4d;
+  padding: 15px 0;
+
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #ff7f7f;
+}
+
+
+/* Caption text */
+.text {
+    width: 818px;
+    align-items: center;
+    margin-left: 350px;
+  color: #ff7f7f;
+  font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+  height: 20px;
+  text-align: center;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.image {
+    width: 800px;
+    height: 300px;
+    margin-left: 350px;
+    margin-right: 350px;
+    border: 9px solid #ff7f7f;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.container_left{
+
+    color: #ff7f7f;
+    margin-left: 0%;
+    margin-top: 28%;
+    height: 300px;
+}
+.container_left2{
+
+    color: #ff7f7f;
+    margin-left: 0%;
+    margin-top: 23%;
+    height: 300px;
+}
+.container_left3{
+
+    color: #ff7f7f;
+    margin-left: 0%;
+    margin-top: 30%;
+    height: 300px;
+}
+.container_left4{
+
+    color: #ff7f7f;
+    margin-left: 0%;
+    margin-top: 22%;
+    height: 300px;
+}
+
+.container {
+  position: relative; /* Required for absolute positioning */
+
+}
+
+.positioned-image {
+  position: absolute;
+  top: 40%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the image */
+
+}
+
+    .poll-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }

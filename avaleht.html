@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Jõulukingid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Sidebar -->
+<div class="navbar">
+  <a href="hub.html" class="navbaritem">Aukey Hub</a>
+  <a href="müts.html" class="navbaritem">Nokamüts</a>
+  <a href="raamatud.html" class="navbaritem">Raamatud</a>
+  <a href="kino.html" class="navbaritem">Kino</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <a href="hub.html">
+    <img src="https://thumbor.arvutitark.ee/UI13IpxeRjOfPLwIcwIo3mcQSbY=/trim/fit-in/800x800/filters:format(webp)/https%3A%2F%2Fstorage.googleapis.com%2Farvutitark-prod%2Fpublic%2Fmedia-hub-olev%2F2022%2F04%2F175111%2Fmedia-chjakk.jpg" class="image"></a>
+
+</div>
+
+<div class="mySlides fade">
+
+  <a href="raamatud.html.html">
+  <img src="https://rahvaraamat.ee/_next/image?url=https%3A%2F%2Fra-product-image.s3.eu-north-1.amazonaws.com%2F26%2F10%2F261032648680f465ee44bf83e99ad40f_origin_1.jpg&w=1920&q=75" class="image"></a>
+
+</div>
+
+<div class="mySlides fade">
+
+  <a href="raamatud.html.html">
+  <img src="https://apl-api.apollo.ee/img/600/744/resize/catalog/product//9/7/9789916698297.jpg" class="image"></a>
+
+</div>
+
+<div class="mySlides fade">
+
+  <a href="müts.html">
+  <img src="/pildid/müts.png" class="image"></a>
+</div>
+<div class="mySlides fade">
+
+  <a href="kino.html">
+  <img src="/pildid/download%20(1).png" class="image"></a>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<p class="text" style="margin-top: 30px">Loen salmi ette ära:</p>
+  <p class="text">Liisal oli vahva aasta</p>
+  <p class="text">Sai tööd, sai lulli lasta</p>
+  <p class="text">Trenni tehtud, koolis... nojah</p>
+  <p class="text">Võibolla see veebi leht</p>
+  <p class="text">Näitab natukene arengut</p>
+
+<br>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
